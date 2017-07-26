@@ -1,0 +1,9 @@
+a)	I would use a List for this problem.  An ArrayList could store all the names and allows for random access to its elements so random index 
+	could be pulled efficiently.
+
+b)	I would use a Set for this problem.  The HashSet would be sufficient to guarentee unique first names.  If the names were required to be in alphabetical
+	or some other order then I would use a SortedSet.
+	
+c)	I would use a map for this problem.  A HashMap can associate first names as keys to counts as values.
+
+d)	I would use a queue for this problem.  A queue would allow for FIFO functionality to implement the waiting list with.
