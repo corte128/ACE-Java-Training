@@ -38,7 +38,7 @@ public class HelloWorld {
 //		System.out.print(MonPal.getNature("ljefo  wlkwe ljk fejlwjkl fjkl \"Jason Jacob Malassis\" lfdj o je ojds \"Fred Nemoy Might Styles\""));
 //		System.out.print(NewYorkDate.getDateInNewYork());
 //		FirstLastDayFinder.printFirstLastDay(6);
-		System.out.print(Anagram.areAnagrams("n", "n"));
+		System.out.print(Anagram.areAnagrams("datjrsherg", "agrrsthdje"));
 	}
 
 }

@@ -21,7 +21,7 @@ public class Anagram {
 		{
 			try
 			{
-				lettersOne.put(one.charAt(i), new Integer(((int)lettersOne.get(one.charAt(i)) + 1))); 
+				lettersOne.put(one.charAt(i), new Integer(((int)lettersOne.get(one.charAt(i)) + 1)));
 			}
 			catch(Exception e)
 			{
@@ -35,11 +35,11 @@ public class Anagram {
 		{
 			try
 			{
-				lettersOne.put(two.charAt(i), new Integer(((int)lettersTwo.get(two.charAt(i)) + 1))); 
+				lettersTwo.put(two.charAt(i), new Integer(((int)lettersTwo.get(two.charAt(i)) + 1))); 
 			}
 			catch(Exception e)
 			{
-				lettersOne.put(two.charAt(i), 0);
+				lettersTwo.put(two.charAt(i), 0);
 			}
 		}
 		
