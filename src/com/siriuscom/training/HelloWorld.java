@@ -9,6 +9,7 @@ import java.lang.*;
 import com.siriuscom.training.string.MonPal;
 import com.siriuscom.training.date12.NewYorkDate;
 import com.siriuscom.training.date13.FirstLastDayFinder;
+import com.siriuscom.training.string2.Anagram;
 /**
  * 
  * @author IEUser
@@ -36,7 +37,8 @@ public class HelloWorld {
 		
 //		System.out.print(MonPal.getNature("ljefo  wlkwe ljk fejlwjkl fjkl \"Jason Jacob Malassis\" lfdj o je ojds \"Fred Nemoy Might Styles\""));
 //		System.out.print(NewYorkDate.getDateInNewYork());
-		FirstLastDayFinder.printFirstLastDay(6);
+//		FirstLastDayFinder.printFirstLastDay(6);
+		System.out.print(Anagram.areAnagrams("n", "n"));
 	}
 
 }

@@ -6,17 +6,23 @@ public class MonPal
 	
 	public static StringBuffer getNature(String sentence)
 	{
+		//create containers for names to be parsed from sentence
 		StringBuffer nameOne = new StringBuffer();
 		StringBuffer nameTwo = new StringBuffer();
 		
+		//will be used to determine the state of the initials of the names(Monotonous or Palonomic)
 		boolean oneIsMono, oneIsPal;
 		boolean twoIsMono, twoIsPal;
 		
 		int i;
 		
+		//convert String input into StringBuffer
 		StringBuffer sentenceBuffer = new StringBuffer(sentence);
+		
+		//initialize StringBuffer to be returned by function
 		StringBuffer output = new StringBuffer();
 		
+		//parse the input data for the first name
 		int tempIndex1 = sentenceBuffer.indexOf("\"") + 1;
 		int tempIndex2 = sentenceBuffer.indexOf("\"", tempIndex1);
 		if(tempIndex1 == 0 || tempIndex2 == -1)
@@ -25,7 +31,7 @@ public class MonPal
 			return output;
 		}
 		
-		
+		//parse the first name for initials
 		nameOne.append(sentenceBuffer.subSequence(tempIndex1, tempIndex2));
 		StringBuffer nameOneInitials = new StringBuffer();
 		nameOneInitials.append(nameOne.subSequence(0, 1));
@@ -34,9 +40,9 @@ public class MonPal
 		{
 			nameOneInitials.append(nameOne.subSequence(tempIndex, tempIndex + 1));
 			tempIndex = nameOne.indexOf(" ", tempIndex) + 1;
-			
 		}
 		
+		//check if name 1's initials are a palindrome
 		oneIsPal = true;
 		for(i = 0;i < nameOneInitials.length()/2;++i)
 		{
@@ -49,6 +55,7 @@ public class MonPal
 		
 		if(oneIsPal)
 		{
+			//check if name 1's initials are Monotonous
 			oneIsMono = true;
 			for(i = 1;i < nameOneInitials.length();++i)
 			{
@@ -63,6 +70,7 @@ public class MonPal
 			oneIsMono = false;
 		}
 		
+		//based on property of name 1's initials add a description to return variable
 		if(oneIsMono)
 		{
 			output.append(nameOne + " is Monotonous |");

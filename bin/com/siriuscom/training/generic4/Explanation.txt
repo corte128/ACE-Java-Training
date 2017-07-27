@@ -2,7 +2,7 @@ a)	I would use a List for this problem.  An ArrayList could store all the names 
 	could be pulled efficiently.
 
 b)	I would use a Set for this problem.  The HashSet would be sufficient to guarentee unique first names.  If the names were required to be in alphabetical
-	or some other order then I would use a SortedSet.
+	or some other order then I would use a OrderedSet.
 	
 c)	I would use a map for this problem.  A HashMap can associate first names as keys to counts as values.
 

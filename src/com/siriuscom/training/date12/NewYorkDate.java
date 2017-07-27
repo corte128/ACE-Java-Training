@@ -10,6 +10,8 @@ public class NewYorkDate {
 		
 		SimpleDateFormat formatter = new SimpleDateFormat("h:m a");
 		formatter.setTimeZone(TimeZone.getTimeZone("America/New_York"));
+		
+		//Calendar.setTimeZone(TimeZone.getTimeZone("America/New_York"));
 		return formatter.format(cal.getTime());
 	}
 }
