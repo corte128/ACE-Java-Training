@@ -17,10 +17,13 @@ public class CustomHashMap<K, V>
 	
 	public V get(K index)
 	{
+		//search for key in the list that the key's hash code indexes 
 		for(K key : this.keyList.get(index.hashCode()))
 		{
 			if(index.equals(key))
 			{
+				//if the key is found use its to index to retrieve the 
+				//corresponding value
 				return this.valueList.get(index.hashCode()).get(
 						this.keyList.get(index.hashCode()).indexOf(index));
 			}
@@ -33,8 +36,10 @@ public class CustomHashMap<K, V>
 		++this.size;
 		try
 		{
-			if(this.get(index) == null)
+			if(this.valueList.get(index.hashCode()) == null)
 			{
+				//if the index of the key's hash indexes a null value
+				//then the list needs to be initialized
 				List<V> newSubValueList = new ArrayList<V>();
 				newSubValueList.add(value);
 				this.valueList.add(index.hashCode(), newSubValueList);
@@ -50,8 +55,11 @@ public class CustomHashMap<K, V>
 				this.keyList.get(index.hashCode()).add(index);
 			}
 		}
-		catch(NullPointerException e)
+		catch(IndexOutOfBoundsException e)
 		{
+			//if the index of the key's hash code is out of bounds,
+			//add new lists of values
+			
 			List<V> newSubValueList = new ArrayList<V>();
 			newSubValueList.add(value);
 			this.valueList.add(index.hashCode(), newSubValueList);
@@ -71,7 +79,7 @@ public class CustomHashMap<K, V>
 				return false;
 			}
 		}
-		catch(NullPointerException e)
+		catch(IndexOutOfBoundsException e)
 		{
 			return false;
 		}
