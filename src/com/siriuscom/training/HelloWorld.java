@@ -4,6 +4,7 @@
 package com.siriuscom.training;
 
 import com.siriuscom.training.generic1.CountComparisons;
+import com.siriuscom.training.date17.TenDays;
 import java.util.*;
 import java.lang.*;
 import com.siriuscom.training.string.MonPal;
@@ -38,7 +39,8 @@ public class HelloWorld {
 //		System.out.print(MonPal.getNature("ljefo  wlkwe ljk fejlwjkl fjkl \"Jason Jacob Malassis\" lfdj o je ojds \"Fred Nemoy Might Styles\""));
 //		System.out.print(NewYorkDate.getDateInNewYork());
 //		FirstLastDayFinder.printFirstLastDay(6);
-		System.out.print(Anagram.areAnagrams("datjrsherg", "agrrsthdje"));
+//		System.out.print(Anagram.areAnagrams("datjrsherg", "agrrsthdje"));
+		TenDays.printTenDayDates();
 	}
 
 }

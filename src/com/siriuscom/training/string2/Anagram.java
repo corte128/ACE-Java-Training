@@ -23,7 +23,7 @@ public class Anagram {
 			{
 				lettersOne.put(one.charAt(i), new Integer(((int)lettersOne.get(one.charAt(i)) + 1)));
 			}
-			catch(Exception e)
+			catch(NullPointerException e)
 			{
 				lettersOne.put(one.charAt(i), 0);
 			}
@@ -37,7 +37,7 @@ public class Anagram {
 			{
 				lettersTwo.put(two.charAt(i), new Integer(((int)lettersTwo.get(two.charAt(i)) + 1))); 
 			}
-			catch(Exception e)
+			catch(NullPointerException e)
 			{
 				lettersTwo.put(two.charAt(i), 0);
 			}
