@@ -1,5 +1,6 @@
 package com.siriuscom.training.date14;
 
+//this class contains a function that solves for and prints the roots of a quadratic equation
 public class Quadratic {
 	public void printSolution(double A, double B, double C)
 	{

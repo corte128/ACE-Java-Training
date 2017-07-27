@@ -4,6 +4,7 @@ import java.util.*;
 
 public class RandomPrint<T> 
 {
+	//this method prints the contents of arguments in random order
 	public void printRandomly(T[] arguments)
 	{
 		ArrayList<T> shuffler = new ArrayList<T>(Arrays.asList(arguments));

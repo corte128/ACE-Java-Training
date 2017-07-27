@@ -3,6 +3,7 @@ package com.siriuscom.training.date12;
 import java.text.*;
 import java.util.*;
 public class NewYorkDate {
+	//this method returns the current time in New York
 	public static String getDateInNewYork()
 	{
 		Calendar cal = Calendar.getInstance();
