@@ -19,13 +19,22 @@ public class Anagram {
 		//counts the specific characters in one
 		for(i = 0;i < one.length();++i)
 		{
-			try
+			//checks if the character is not a whitespace or 
+			//spcial character
+			if(Character.isLetter(one.charAt(i)) || 
+					Character.isDigit(one.charAt(i)))
 			{
-				lettersOne.put(one.charAt(i), new Integer(((int)lettersOne.get(one.charAt(i)) + 1)));
-			}
-			catch(NullPointerException e)
-			{
-				lettersOne.put(one.charAt(i), 0);
+				//checks if letter has already been counted
+				//if it has then increment the count
+				//if it hasn't then initialize the count to 1
+				try
+				{
+					lettersOne.put(one.charAt(i), new Integer(((int)lettersOne.get(one.charAt(i)) + 1)));
+				}
+				catch(NullPointerException e)
+				{
+					lettersOne.put(one.charAt(i), 1);
+				}
 			}
 			
 		}
@@ -33,13 +42,22 @@ public class Anagram {
 		//counts the specific characters in two
 		for(i = 0;i < two.length();++i)
 		{
-			try
+			//checks if the character is not a whitespace or 
+			//spcial character
+			if(Character.isLetter(two.charAt(i)) || 
+					Character.isDigit(two.charAt(i)))
 			{
-				lettersTwo.put(two.charAt(i), new Integer(((int)lettersTwo.get(two.charAt(i)) + 1))); 
-			}
-			catch(NullPointerException e)
-			{
-				lettersTwo.put(two.charAt(i), 0);
+				//checks if letter has already been counted
+				//if it has then increment the count
+				//if it hasn't then initialize the count to 1
+				try
+				{
+					lettersTwo.put(two.charAt(i), new Integer(((int)lettersTwo.get(two.charAt(i)) + 1))); 
+				}
+				catch(NullPointerException e)
+				{
+					lettersTwo.put(two.charAt(i), 1);
+				}
 			}
 		}
 		

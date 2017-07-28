@@ -3,10 +3,17 @@
  */
 package com.siriuscom.training;
 
+import com.siriuscom.training.exception.IOThrower;
+import com.siriuscom.training.exception2.*;
+import com.siriuscom.training.exception4.*;
 import com.siriuscom.training.generic1.CountComparisons;
 import com.siriuscom.training.date17.TenDays;
+import com.siriuscom.training.exception3.NumeratorDivisorLoop;
+import com.siriuscom.training.exception4.AverageMarks;
+
 import java.util.*;
 import java.lang.*;
+import java.io.*;
 import com.siriuscom.training.string.MonPal;
 import com.siriuscom.training.date12.NewYorkDate;
 import com.siriuscom.training.date13.FirstLastDayFinder;
@@ -27,7 +34,7 @@ public class HelloWorld {
 	String msg;
 	public static void main(String[] args) {
 
-		//System.out.print(Day1Exercises.getDay(8, 3, 1916));
+//		System.out.print(Day1Exercises.getDay(8, 3, 1916));
 //		Day1ExerciseB.getGrade(78.5);
 //		Day1ExerciseJ.printFibonacciNumbers();
 		
@@ -40,7 +47,9 @@ public class HelloWorld {
 //		System.out.print(NewYorkDate.getDateInNewYork());
 //		FirstLastDayFinder.printFirstLastDay(6);
 //		System.out.print(Anagram.areAnagrams("datjrsherg", "agrrsthdje"));
-		TenDays.printTenDayDates();
+//		TenDays.printTenDayDates();
+//		DerivedClass excepTest = new DerivedClass();
+//		NumeratorDivisorLoop.divide();
+		AverageMarks.getAverageMarks();
 	}
-
 }

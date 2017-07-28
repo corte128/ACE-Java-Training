@@ -50,7 +50,8 @@ public class CustomHashMap<K, V>
 			}
 			else
 			{
-				//A collision Occurs
+				//A collision occurs
+				//append to existing list at index of key's hash code
 				this.valueList.get(index.hashCode()).add(value);
 				this.keyList.get(index.hashCode()).add(index);
 			}
@@ -98,6 +99,4 @@ public class CustomHashMap<K, V>
 	{
 		return size;
 	}
-	
-	
 }
