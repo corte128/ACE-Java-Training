@@ -1,16 +1,10 @@
 package com.siriuscom.training.exception2;
 
+import java.io.*;
 public class DerivedClass extends BaseClass 
 {
-	public DerivedClass()
+	public DerivedClass() throws IOException
 	{
-		try
-		{
-			super();
-		}
-		catch(Exception e)
-		{
-			System.out.print(0);
-		}
+		super();
 	}
 }

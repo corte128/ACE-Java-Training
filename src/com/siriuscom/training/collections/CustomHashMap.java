@@ -75,6 +75,8 @@ public class CustomHashMap<K, V>
 	{
 		try
 		{
+			//if the index is within the bounds of the lists size
+			//but is not an initialized list then the key is not in the map
 			if(this.valueList.get(index.hashCode()) == null)
 			{
 				return false;
@@ -82,6 +84,8 @@ public class CustomHashMap<K, V>
 		}
 		catch(IndexOutOfBoundsException e)
 		{
+			//If the index is not within the bounds of the list's size
+			//then the key is not in the map
 			return false;
 		}
 		
